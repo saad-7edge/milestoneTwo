@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.todo-list::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-text::-webkit-scrollbar {
+  display: none;
+}
+
+/* The animation code */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #e9b347;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: #ffffff;
+  padding: 25px;
+  width: 550px;
+  border-radius: 10px;
+}
+.todo-header{
+  display: flex;
+  justify-content: space-between;
+}
+.notes i {
+  font-size: 2rem; /* Change this to increase icon height */
+}
+
+.todo-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  height: 50px;
+}
+.todo-body input{
+  flex:1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.todo-body img{
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.todo-list{
+  margin-top: 20px;
+  overflow: auto;
+  max-height: 200px;
+}
+.todo-item{
+  width: 100%;
+  display: inline-flex;
+  background-color: bisque;
+  justify-content: space-between;
+  margin-top: 5px;
+  height: 34px;
+  border-radius: 5px;
+  padding: 5px;
+  /* margin: 5px 15px; */
+  /* text-overflow: ellipsis; */
+  /* overflow: hidden; */
+}
+.icons{
+  display: inline-flex;
+}
+.todo-text{
+overflow:auto ;
+}
+
+.fa-pencil{
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.fa-trash{
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#Alert { 
+  transition: opacity 2.5s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    background-color: #e4c27efd;
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 25px; */
+    padding: 10px;
+    padding-top: 25px;
+    border-radius: 0px;
+  }
+  .todo-header{
+    justify-content: center;
+  }
+  .todo-header .notes{
+    visibility: hidden;
+  }
+}
+
+
