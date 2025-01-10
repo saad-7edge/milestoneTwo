@@ -85,25 +85,26 @@ body {
   height: 34px;
   border-radius: 5px;
   padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* margin: 5px 15px; */
   /* text-overflow: ellipsis; */
   /* overflow: hidden; */
 }
 .icons{
-  display: inline-flex;
+  display: flex; /* Enables flexbox */
+  align-items: center;
 }
 .todo-text{
 overflow:auto ;
 }
 
 .fa-pencil{
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   cursor: pointer;
 }
 .fa-trash{
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   cursor: pointer;
 }
 
